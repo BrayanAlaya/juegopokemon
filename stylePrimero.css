@@ -1,0 +1,83 @@
+:root{
+    --darkBLue: #010056;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to right, var(--darkBLue) 0%, black 33% ,black 66%, var(--darkBLue) 100%);
+}
+.boton{
+    border-radius: 0.7rem;
+    font-size: 2rem;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    margin: 4rem auto 0 auto;
+    background-color: white;
+}
+@media(min-width: 1050px) {
+    .boton{
+        width: 30%;
+    }
+}
+.boton:hover{
+    background-color: black;
+    color: white;
+}
+
+.Seleccion-de-champ{
+    border-radius: 3rem;
+    border: 0.5rem solid var(--darkBLue);
+    padding: 2rem;
+    width: min(100rem , 100%);
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+}
+.Seleccion-de-champ legend{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.escoger-champ label{
+    font-weight: 700;
+    width: auto;    
+}
+.Seleccion-de-champk3{
+    font-weight: 400;
+}
+.Seleccion-de-champ fieldset{
+    border: none;
+}
+.escoger-champ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    width: 100%;
+}
+.escojer-divisiones{
+    padding: 0 1rem;
+    width: 100%;
+}
+@media(min-width: 1280px) {
+    .escoger-champ{
+        display: flex;
+        flex-direction: row;
+    }
+    .Seleccion-de-champ{
+        width: 50%;
+        margin-top: 10%;
+    }
+}
+

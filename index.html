@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Primer Trabajo</title>
+    <script src="./js/pokemonjs.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link id= "primer-fondo" rel="stylesheet" href="./stylePrimero.css">
+    <link id= "cssFinal" rel="stylesheet" href="./cssFinal.css">
+</head>
+<body>
+    <section id="seleccion-champ-esconder">
+        <form class = "Seleccion-de-champ">
+            <legend>POKEMON 🔥💧🌱</legend>   
+            <fieldset>
+                <h3>Escoge tu champ:</h3>
+                <div class="escoger-champ">
+                    <div class="escojer-divisiones">
+                        <img class="image" src="./image/charizard.png">
+                        <label for="Charmander"><input type="radio" name="pokemon" id="Charmander">Charizard: 🔥/></label>
+                    </div>  
+                    <div class="escojer-divisiones">
+                        <img class="image" src="./image/greninjagod.png">                        
+                        <label for="Squirtle"><input type="radio" name="pokemon" id="Squirtle">Greninja: 💧></label>
+                    </div>
+                    <div class="escojer-divisiones">
+                        <img class="image" src="./image/sceptile.png">
+                        <label for="Bulbazor"><input type="radio" name="pokemon" id="Bulbazor">Sceptile: 🌱/></label>    
+                    </div>
+                </div>
+                <div>
+                    <button class="boton" id="boton-seleccionar">Elegir</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <section id="section-habilidades">
+        <section id="Sellecion-de-habilidad">
+            <h2>Elige tu ataque</h2>
+
+            <p>Tu pokemon <span id="mascotaJugadorNombre"></span> tiene <span id="vidaJugador">3</span> vidas</p>
+            <p>El pokemon <span id="mascotaEnemigoNombre"></span> del enemigo tiene <span id="vidaEnemigo">3</span> vidas</p>
+            
+            <div class="navegacion-botones">
+                <button class="boton" id='boton-fuego'>Fuego 🔥</button>
+                <button class="boton" id='boton-agua'>Agua 💧</button>
+                <button class="boton" id='boton-planta'>Planta 🌱</button>
+            </div>
+        </section>
+
+        <section id="Resultados">
+        </section>
+        
+        <section id="Reinicio">
+            <button  class="boton" id="botonr-einiciar">Reiniciar</button>
+        </section>
+    </section>
+</body>
+</html>

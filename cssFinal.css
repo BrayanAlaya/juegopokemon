@@ -1,0 +1,71 @@
+:root{
+    --darkBLue: #010056;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to right, var(--darkBLue) 0%, black 33% ,black 66%, var(--darkBLue) 100%);    
+}
+h2{
+    text-align: center;    
+}
+.boton{
+    border-radius: 0.7rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    width: 100%;
+    background-color: white;
+}
+.boton:hover{
+    background-color: black;
+    color: white;
+}
+.navegacion-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+@media(min-width: 768px) {
+    .boton{
+        width: 30%;
+    }
+    .navegacion-botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+}
+#section-habilidades{
+    padding: 2rem;
+    border: 1rem solid var(--darkBLue);
+    border-radius: 2rem;
+    margin: 0 auto;
+    width: min(80rem, 100%);
+    background-color: white;
+}
+@media(min-width: 769px) {
+    #section-habilidades{
+        margin-top: 3%;
+    }
+}
+#Sellecion-de-habilidad p{
+    font-weight: 700;
+}
+#Resultados{
+    font-weight: 700;
+}
+#Reinicio{
+    text-align: center;
+}
+
